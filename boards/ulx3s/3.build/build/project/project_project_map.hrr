@@ -1,0 +1,56 @@
+---------------------------------------------------
+Report for cell pipelinec_top
+   Instance path: pipelinec_top
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      30.00        100.0
+                                  LUT4	      34.00        100.0
+                                 IOBUF	          2        100.0
+                                PFUREG	         26        100.0
+                                RIPPLE	         13        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                   blink_0clk_a5a1cd4e	          1        100.0
+---------------------------------------------------
+Report for cell blink_0clk_a5a1cd4e
+   Instance path: pipelinec_top/blink_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      30.00        100.0
+                                  LUT4	      34.00        100.0
+                                PFUREG	         26        100.0
+                                RIPPLE	         13        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+mux_uint1_t_uint1_t_uint1_t_0clk_de264c78	          1         1.1
+mux_uint1_t_uint25_t_uint25_t_0clk_de264c78	          1        21.1
+bin_op_plus_uint25_t_uint1_t_0clk_de264c78	          1        43.3
+bin_op_eq_uint25_t_uint25_t_0clk_de264c78	          1        12.2
+---------------------------------------------------
+Report for cell mux_uint1_t_uint1_t_uint1_t_0clk_de264c78
+   Instance path: pipelinec_top/blink_inst/led_mux_blink_c_l17_c3_f797
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.33         1.1
+                                  LUT4	       1.00         2.9
+---------------------------------------------------
+Report for cell mux_uint1_t_uint25_t_uint25_t_0clk_de264c78
+   Instance path: pipelinec_top/blink_inst/counter_mux_blink_c_l17_c3_f797
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       6.33        21.1
+                                  LUT4	      25.00        73.5
+---------------------------------------------------
+Report for cell bin_op_plus_uint25_t_uint1_t_0clk_de264c78
+   Instance path: pipelinec_top/blink_inst/bin_op_plus_blink_c_l26_c5_29f1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      13.00        43.3
+                                RIPPLE	         13        100.0
+---------------------------------------------------
+Report for cell bin_op_eq_uint25_t_uint25_t_0clk_de264c78
+   Instance path: pipelinec_top/blink_inst/bin_op_eq_blink_c_l17_c6_5cdf
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       3.67        12.2
+                                  LUT4	       8.00        23.5

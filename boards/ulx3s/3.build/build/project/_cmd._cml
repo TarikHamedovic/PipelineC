@@ -1,0 +1,1 @@
+-link -encrypt -top pipelinec_top -osyn /home/user/FPGA/tools/PipelineC/ulx3s/3.build/build/project/synwork/project_project_comp.srs /home/user/FPGA/tools/PipelineC/ulx3s/3.build/build/project/synwork/layer0.srs  -jobname linker  

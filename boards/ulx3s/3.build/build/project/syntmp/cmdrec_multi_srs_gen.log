@@ -1,0 +1,8 @@
+/home/user/FPGA/tools/diamond/usr/local/diamond/3.13/synpbase/bin/syn_nfilter  -link  -top  pipelinec_top  -multisrs  /home/user/FPGA/tools/PipelineC/ulx3s/3.build/build/project/synwork/project_project_comp.srs  -osyn  /home/user/FPGA/tools/PipelineC/ulx3s/3.build/build/project/synwork/project_project_mult.srs  -log  /home/user/FPGA/tools/PipelineC/ulx3s/3.build/build/project/synlog/project_project_multi_srs_gen.srr 
+relcom:../../../../../../diamond/usr/local/diamond/3.13/synpbase/bin/syn_nfilter -link -top pipelinec_top -multisrs ../synwork/project_project_comp.srs -osyn ../synwork/project_project_mult.srs -log ../synlog/project_project_multi_srs_gen.srr
+rc:0 success:1 runtime:0
+file:../synwork/project_project_comp.srs|io:i|time:1726319583|size:5690|exec:0|csum:64DC0005B5A741374B36B790DAF06B1A
+file:../synwork/project_project_mult.srs|io:o|time:1726319584|size:1699|exec:0|csum:
+file:../synlog/project_project_multi_srs_gen.srr|io:o|time:1726319584|size:1167|exec:0|csum:
+file:../../../../../../diamond/usr/local/diamond/3.13/synpbase/linux_a_64/syn_nfilter|io:i|time:1691686801|size:14307024|exec:1|csum:DCFFD1FC80E17949E93B27FFDE78343E
+file:../../../../../../diamond/usr/local/diamond/3.13/synpbase/bin/syn_nfilter|io:i|time:1691686326|size:368|exec:1|csum:004E4455B64BA10AD6A92FB2301610E0

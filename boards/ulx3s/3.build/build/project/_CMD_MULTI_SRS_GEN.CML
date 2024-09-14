@@ -1,0 +1,1 @@
+ -link  -top  pipelinec_top  -multisrs  /home/user/FPGA/tools/PipelineC/ulx3s/3.build/build/project/synwork/project_project_comp.srs  -osyn  /home/user/FPGA/tools/PipelineC/ulx3s/3.build/build/project/synwork/project_project_mult.srs  -log  /home/user/FPGA/tools/PipelineC/ulx3s/3.build/build/project/synlog/project_project_multi_srs_gen.srr 

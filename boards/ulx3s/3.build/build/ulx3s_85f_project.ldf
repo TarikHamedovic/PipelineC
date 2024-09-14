@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<BaliProject version="3.2" title="project" device="LFE5U-85F-6BG381C" default_implementation="project">
+  <Options/>
+  <Implementation title="project" dir="project" description="project" synthesis="synplify" default_strategy="Strategy1">
+    <Options def_top="pipelinec_top" top="pipelinec_top"/>
+    <Source name="/home/user/FPGA/tools/PipelineC/ulx3s/1.hw/top.v" type="Verilog" type_short="Verilog">
+      <Options/>
+    </Source>
+    <Source name="/home/user/FPGA/tools/PipelineC/ulx3s/1.hw/pipelinec_top.v" type="Verilog" type_short="Verilog">
+      <Options/>
+    </Source>
+    <Source name="/home/user/FPGA/tools/PipelineC/ulx3s/3.build/../1.hw/constraints/top.lpf" type="Logic Preference" type_short="LPF">
+      <Options/>
+    </Source>
+    <Source name="scripts/ulx3s_sram.xcf" type="Programming Project File" type_short="Programming">
+      <Options/>
+    </Source>
+  </Implementation>
+  <Strategy name="Strategy1" file="scripts/ulx3s.sty"/>
+</BaliProject>

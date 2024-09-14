@@ -1,0 +1,28 @@
+#OPTIONS:"|-layerid|0|-orig_srs|/home/user/FPGA/tools/PipelineC/ulx3s/3.build/build/project/synwork/project_project_comp.srs|-top|pipelinec_top|-prodtype|synplify_pro|-dspmac|-fixsmult|-infer_seqShift|-nram|-sdff_counter|-divnmod|-nostructver|-lattice|-I|/home/user/FPGA/tools/PipelineC/ulx3s/3.build/build|-I|/home/user/FPGA/tools/PipelineC/ulx3s/3.build/build/project/|-I|/home/user/FPGA/tools/diamond/usr/local/diamond/3.13/synpbase/lib|-v2001|-devicelib|/home/user/FPGA/tools/diamond/usr/local/diamond/3.13/synpbase/lib/lucent/ecp5u.v|-devicelib|/home/user/FPGA/tools/diamond/usr/local/diamond/3.13/synpbase/lib/lucent/pmi_def.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-D_MULTIPLE_FILE_COMPILATION_UNIT_|-lib|work|-fv2001|-lib|work|-fv2001"
+#CUR:"/home/user/FPGA/tools/diamond/usr/local/diamond/3.13/synpbase/linux_a_64/c_ver":1691686800
+#CUR:"/home/user/FPGA/tools/diamond/usr/local/diamond/3.13/synpbase/lib/lucent/ecp5u.v":1691686808
+#CUR:"/home/user/FPGA/tools/diamond/usr/local/diamond/3.13/synpbase/lib/lucent/pmi_def.v":1691686809
+#CUR:"/home/user/FPGA/tools/diamond/usr/local/diamond/3.13/synpbase/lib/vlog/hypermods.v":1691686317
+#CUR:"/home/user/FPGA/tools/diamond/usr/local/diamond/3.13/synpbase/lib/vlog/scemi_objects.v":1691686317
+#CUR:"/home/user/FPGA/tools/diamond/usr/local/diamond/3.13/synpbase/lib/vlog/scemi_pipes.svh":1691686317
+#CUR:"/home/user/FPGA/tools/PipelineC/ulx3s/1.hw/top.v":1726318659
+#CUR:"/home/user/FPGA/tools/PipelineC/ulx3s/1.hw/pipelinec_top.v":1726318891
+#numinternalfiles:5
+#defaultlanguage:verilog
+0			"/home/user/FPGA/tools/PipelineC/ulx3s/1.hw/top.v" verilog
+1			"/home/user/FPGA/tools/PipelineC/ulx3s/1.hw/pipelinec_top.v" verilog
+#Dependency Lists(Uses List)
+0 -1
+1 0
+#Dependency Lists(Users Of)
+0 1
+1 -1
+#Design Unit to File Association
+module work bin_op_eq_uint25_t_uint25_t_0clk_de264c78 0
+module work bin_op_plus_uint25_t_uint1_t_0clk_de264c78 0
+module work blink_0clk_a5a1cd4e 0
+module work mux_uint1_t_uint25_t_uint25_t_0clk_de264c78 0
+module work mux_uint1_t_uint1_t_uint1_t_0clk_de264c78 0
+module work unary_op_not_uint1_t_0clk_de264c78 0
+module work top 0
+module work pipelinec_top 1

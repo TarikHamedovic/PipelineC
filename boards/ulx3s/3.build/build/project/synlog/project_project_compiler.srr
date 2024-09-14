@@ -1,0 +1,149 @@
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: U-2023.03L-SP1
+Install: /home/user/FPGA/tools/diamond/usr/local/diamond/3.13/synpbase
+OS: Ubuntu 22.04.4 LTS
+Hostname: user-HP-ProBook-450-G5
+max virtual memory: unlimited (bytes)
+max user processes: 47101
+max stack size: 8388608 (bytes)
+
+
+Implementation : project
+Synopsys HDL Compiler, Version comp202303synp1, Build 155R, Built Aug 10 2023 09:58:08, @4875095
+
+@N|Running in 64-bit mode
+###########################################################[
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: U-2023.03L-SP1
+Install: /home/user/FPGA/tools/diamond/usr/local/diamond/3.13/synpbase
+OS: Ubuntu 22.04.4 LTS
+Hostname: user-HP-ProBook-450-G5
+max virtual memory: unlimited (bytes)
+max user processes: 47101
+max stack size: 8388608 (bytes)
+
+
+Implementation : project
+Synopsys Verilog Compiler, Version comp202303synp1, Build 155R, Built Aug 10 2023 09:58:08, @4875095
+
+@N|Running in 64-bit mode
+@I::"/home/user/FPGA/tools/diamond/usr/local/diamond/3.13/synpbase/lib/lucent/ecp5u.v" (library work)
+@I::"/home/user/FPGA/tools/diamond/usr/local/diamond/3.13/synpbase/lib/lucent/pmi_def.v" (library work)
+@I::"/home/user/FPGA/tools/diamond/usr/local/diamond/3.13/synpbase/lib/vlog/hypermods.v" (library __hyper__lib__)
+@I::"/home/user/FPGA/tools/diamond/usr/local/diamond/3.13/synpbase/lib/vlog/scemi_objects.v" (library snps_haps)
+@I::"/home/user/FPGA/tools/diamond/usr/local/diamond/3.13/synpbase/lib/vlog/scemi_pipes.svh" (library snps_haps)
+@I::"/home/user/FPGA/tools/PipelineC/ulx3s/1.hw/top.v" (library work)
+@W: CG289 :"/home/user/FPGA/tools/PipelineC/ulx3s/1.hw/top.v":26:42:26:91|Specified digits overflow the number's size
+@W: CG289 :"/home/user/FPGA/tools/PipelineC/ulx3s/1.hw/top.v":65:49:65:59|Specified digits overflow the number's size
+@W: CG289 :"/home/user/FPGA/tools/PipelineC/ulx3s/1.hw/top.v":134:51:134:61|Specified digits overflow the number's size
+@I::"/home/user/FPGA/tools/PipelineC/ulx3s/1.hw/pipelinec_top.v" (library work)
+@N|stack limit increased to max
+Verilog syntax check successful!
+Selecting top level module pipelinec_top
+@N: CG364 :"/home/user/FPGA/tools/PipelineC/ulx3s/1.hw/top.v":3:7:3:47|Synthesizing module bin_op_eq_uint25_t_uint25_t_0clk_de264c78 in library work.
+Running optimization stage 1 on bin_op_eq_uint25_t_uint25_t_0clk_de264c78 .......
+Finished optimization stage 1 on bin_op_eq_uint25_t_uint25_t_0clk_de264c78 (CPU Time 0h:00m:00s, Memory Used current: 126MB peak: 126MB)
+@N: CG364 :"/home/user/FPGA/tools/PipelineC/ulx3s/1.hw/top.v":17:7:17:48|Synthesizing module bin_op_plus_uint25_t_uint1_t_0clk_de264c78 in library work.
+Running optimization stage 1 on bin_op_plus_uint25_t_uint1_t_0clk_de264c78 .......
+Finished optimization stage 1 on bin_op_plus_uint25_t_uint1_t_0clk_de264c78 (CPU Time 0h:00m:00s, Memory Used current: 126MB peak: 126MB)
+@N: CG364 :"/home/user/FPGA/tools/PipelineC/ulx3s/1.hw/top.v":123:7:123:49|Synthesizing module mux_uint1_t_uint25_t_uint25_t_0clk_de264c78 in library work.
+Running optimization stage 1 on mux_uint1_t_uint25_t_uint25_t_0clk_de264c78 .......
+Finished optimization stage 1 on mux_uint1_t_uint25_t_uint25_t_0clk_de264c78 (CPU Time 0h:00m:00s, Memory Used current: 126MB peak: 126MB)
+@N: CG364 :"/home/user/FPGA/tools/PipelineC/ulx3s/1.hw/top.v":109:7:109:47|Synthesizing module mux_uint1_t_uint1_t_uint1_t_0clk_de264c78 in library work.
+Running optimization stage 1 on mux_uint1_t_uint1_t_uint1_t_0clk_de264c78 .......
+Finished optimization stage 1 on mux_uint1_t_uint1_t_uint1_t_0clk_de264c78 (CPU Time 0h:00m:00s, Memory Used current: 126MB peak: 126MB)
+@N: CG364 :"/home/user/FPGA/tools/PipelineC/ulx3s/1.hw/top.v":149:7:149:40|Synthesizing module unary_op_not_uint1_t_0clk_de264c78 in library work.
+Running optimization stage 1 on unary_op_not_uint1_t_0clk_de264c78 .......
+Finished optimization stage 1 on unary_op_not_uint1_t_0clk_de264c78 (CPU Time 0h:00m:00s, Memory Used current: 126MB peak: 126MB)
+@N: CG364 :"/home/user/FPGA/tools/PipelineC/ulx3s/1.hw/top.v":29:7:29:25|Synthesizing module blink_0clk_a5a1cd4e in library work.
+Running optimization stage 1 on blink_0clk_a5a1cd4e .......
+Finished optimization stage 1 on blink_0clk_a5a1cd4e (CPU Time 0h:00m:00s, Memory Used current: 126MB peak: 126MB)
+@N: CG364 :"/home/user/FPGA/tools/PipelineC/ulx3s/1.hw/pipelinec_top.v":2:7:2:19|Synthesizing module pipelinec_top in library work.
+Running optimization stage 1 on pipelinec_top .......
+Finished optimization stage 1 on pipelinec_top (CPU Time 0h:00m:00s, Memory Used current: 126MB peak: 126MB)
+Running optimization stage 2 on pipelinec_top .......
+Finished optimization stage 2 on pipelinec_top (CPU Time 0h:00m:00s, Memory Used current: 126MB peak: 126MB)
+Running optimization stage 2 on blink_0clk_a5a1cd4e .......
+Finished optimization stage 2 on blink_0clk_a5a1cd4e (CPU Time 0h:00m:00s, Memory Used current: 126MB peak: 126MB)
+Running optimization stage 2 on unary_op_not_uint1_t_0clk_de264c78 .......
+Finished optimization stage 2 on unary_op_not_uint1_t_0clk_de264c78 (CPU Time 0h:00m:00s, Memory Used current: 126MB peak: 126MB)
+Running optimization stage 2 on mux_uint1_t_uint1_t_uint1_t_0clk_de264c78 .......
+Finished optimization stage 2 on mux_uint1_t_uint1_t_uint1_t_0clk_de264c78 (CPU Time 0h:00m:00s, Memory Used current: 126MB peak: 126MB)
+Running optimization stage 2 on mux_uint1_t_uint25_t_uint25_t_0clk_de264c78 .......
+Finished optimization stage 2 on mux_uint1_t_uint25_t_uint25_t_0clk_de264c78 (CPU Time 0h:00m:00s, Memory Used current: 126MB peak: 126MB)
+Running optimization stage 2 on bin_op_plus_uint25_t_uint1_t_0clk_de264c78 .......
+Finished optimization stage 2 on bin_op_plus_uint25_t_uint1_t_0clk_de264c78 (CPU Time 0h:00m:00s, Memory Used current: 126MB peak: 126MB)
+Running optimization stage 2 on bin_op_eq_uint25_t_uint25_t_0clk_de264c78 .......
+Finished optimization stage 2 on bin_op_eq_uint25_t_uint25_t_0clk_de264c78 (CPU Time 0h:00m:00s, Memory Used current: 126MB peak: 126MB)
+
+For a summary of runtime per design unit, please see file:
+==========================================================
+@L: /home/user/FPGA/tools/PipelineC/ulx3s/3.build/build/project/synwork/layer0.duruntime
+
+
+
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 126MB peak: 126MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat Sep 14 15:13:03 2024
+
+###########################################################]
+###########################################################[
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: U-2023.03L-SP1
+Install: /home/user/FPGA/tools/diamond/usr/local/diamond/3.13/synpbase
+OS: Ubuntu 22.04.4 LTS
+Hostname: user-HP-ProBook-450-G5
+max virtual memory: unlimited (bytes)
+max user processes: 47101
+max stack size: 8388608 (bytes)
+
+
+Implementation : project
+Synopsys Synopsys Netlist Linker, Version comp202303synp1, Build 155R, Built Aug 10 2023 09:58:08, @4875095
+
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 134MB peak: 134MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat Sep 14 15:13:03 2024
+
+###########################################################]
+
+For a summary of runtime and memory usage for all design units, please see file:
+==========================================================
+@L: /home/user/FPGA/tools/PipelineC/ulx3s/3.build/build/project/synwork/project_project_comp.rt.csv
+
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 33MB peak: 33MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat Sep 14 15:13:03 2024
+
+###########################################################]

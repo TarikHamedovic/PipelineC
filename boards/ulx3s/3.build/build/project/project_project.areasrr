@@ -1,0 +1,82 @@
+----------------------------------------------------------------------
+Report for cell pipelinec_top.verilog
+
+Register bits: 26 of 83640 (0%)
+PIC Latch:       0
+I/O cells:       2
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2C       13       100.0
+                            FD1S3AX       26       100.0
+                                GSR        1       100.0
+                                 IB        1       100.0
+                                 OB        1       100.0
+                           ORCALUT4       34       100.0
+                                PUR        1       100.0
+                                VHI        6       100.0
+                                VLO        6       100.0
+SUB MODULES 
+          bin_op_eq_uint25_t_uint25_t_0clk_de264c78        1       100.0
+          bin_op_plus_uint25_t_uint1_t_0clk_de264c78        1       100.0
+                blink_0clk_a5a1cd4e        1       100.0
+          mux_uint1_t_uint1_t_uint1_t_0clk_de264c78        1       100.0
+          mux_uint1_t_uint25_t_uint25_t_0clk_de264c78        1       100.0
+                            
+                         TOTAL            94           
+----------------------------------------------------------------------
+Report for cell blink_0clk_a5a1cd4e.netlist
+     Instance path:  blink_inst
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2C       13       100.0
+                            FD1S3AX       26       100.0
+                           ORCALUT4       34       100.0
+                                VHI        5        83.3
+                                VLO        5        83.3
+SUB MODULES 
+          bin_op_eq_uint25_t_uint25_t_0clk_de264c78        1       100.0
+          bin_op_plus_uint25_t_uint1_t_0clk_de264c78        1       100.0
+          mux_uint1_t_uint1_t_uint1_t_0clk_de264c78        1       100.0
+          mux_uint1_t_uint25_t_uint25_t_0clk_de264c78        1       100.0
+                            
+                         TOTAL            87           
+----------------------------------------------------------------------
+Report for cell mux_uint1_t_uint1_t_uint1_t_0clk_de264c78.netlist
+     Instance path:  blink_inst.led_mux_blink_c_l17_c3_f797
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                           ORCALUT4        1         2.9
+                                VHI        1        16.7
+                                VLO        1        16.7
+                            
+                         TOTAL             3           
+----------------------------------------------------------------------
+Report for cell mux_uint1_t_uint25_t_uint25_t_0clk_de264c78.netlist
+     Instance path:  blink_inst.counter_mux_blink_c_l17_c3_f797
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                           ORCALUT4       25        73.5
+                                VHI        1        16.7
+                                VLO        1        16.7
+                            
+                         TOTAL            27           
+----------------------------------------------------------------------
+Report for cell bin_op_plus_uint25_t_uint1_t_0clk_de264c78.netlist
+     Instance path:  blink_inst.bin_op_plus_blink_c_l26_c5_29f1
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2C       13       100.0
+                                VHI        1        16.7
+                                VLO        1        16.7
+                            
+                         TOTAL            15           
+----------------------------------------------------------------------
+Report for cell bin_op_eq_uint25_t_uint25_t_0clk_de264c78.netlist
+     Instance path:  blink_inst.bin_op_eq_blink_c_l17_c6_5cdf
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                           ORCALUT4        8        23.5
+                                VHI        1        16.7
+                                VLO        1        16.7
+                            
+                         TOTAL            10           

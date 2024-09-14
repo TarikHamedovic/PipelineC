@@ -1,0 +1,1115 @@
+
+Loading design for application trce from file project_project.ncd.
+Design name: pipelinec_top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LFE5U-85F
+Package:     CABGA381
+Performance: 6
+Loading device for application trce from file 'sa5p85.nph' in environment: /home/user/FPGA/tools/diamond/usr/local/diamond/3.13/ispfpga.
+Package Status:                     Final          Version 1.37.
+Performance Hardware Data Status:   Final          Version 55.1.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.13.0.56.2
+Sat Sep 14 15:13:48 2024
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 6 -sphld m -o project_project.twr project_project.ncd project_project.prf 
+Design file:     project_project.ncd
+Preference file: project_project.prf
+Device,speed:    LFE5U-85F,6
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Preference: FREQUENCY PORT "clk" 25.000000 MHz ;
+            976 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed:  The following path meets requirements by 35.000ns
+         The internal maximum frequency of the following component is 200.000 MHz
+
+ Logical Details:  Cell type  Pin name       Component name
+
+   Destination:    PIO        PAD            clk
+
+   Delay:               5.000ns -- based on Minimum Pulse Width
+
+
+Passed: The following path meets requirements by 35.771ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              blink_inst/bin_op_eq_blink_c_l17_c6_5cdf_left[1]  (from clk_c +)
+   Destination:    FF         Data in        blink_inst/bin_op_eq_blink_c_l17_c6_5cdf_left[14]  (to clk_c +)
+
+   Delay:               4.489ns  (27.4% logic, 72.6% route), 4 logic levels.
+
+ Constraint Details:
+
+      4.489ns physical path delay blink_inst/SLICE_13 to blink_inst/SLICE_20 meets
+     40.000ns delay constraint less
+      0.000ns skew and
+     -0.260ns DIN_SET requirement (totaling 40.260ns) by 35.771ns
+
+ Physical Path Details:
+
+      Data path blink_inst/SLICE_13 to blink_inst/SLICE_20:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.522    R19C25A.CLK to     R19C25A.Q1 blink_inst/SLICE_13 (from clk_c)
+ROUTE         2     1.019     R19C25A.Q1 to     R18C26D.A1 blink_inst/bin_op_eq_blink_c_l17_c6_5cdf_left[1]
+CTOF_DEL    ---     0.236     R18C26D.A1 to     R18C26D.F1 blink_inst/bin_op_eq_blink_c_l17_c6_5cdf/SLICE_28
+ROUTE         1     0.786     R18C26D.F1 to     R20C26A.A1 blink_inst/bin_op_eq_blink_c_l17_c6_5cdf/return_output_NE_15
+CTOF_DEL    ---     0.236     R20C26A.A1 to     R20C26A.F1 blink_inst/SLICE_26
+ROUTE        26     1.454     R20C26A.F1 to     R20C27D.A0 blink_inst/return_output_NE_22
+CTOF_DEL    ---     0.236     R20C27D.A0 to     R20C27D.F0 blink_inst/SLICE_20
+ROUTE         1     0.000     R20C27D.F0 to    R20C27D.DI0 blink_inst/reg_comb_counter[14] (to clk_c)
+                  --------
+                    4.489   (27.4% logic, 72.6% route), 4 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk to blink_inst/SLICE_13:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        14     2.781       G2.PADDI to    R19C25A.CLK clk_c
+                  --------
+                    2.781   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk to blink_inst/SLICE_20:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        14     2.781       G2.PADDI to    R20C27D.CLK clk_c
+                  --------
+                    2.781   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 35.771ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              blink_inst/bin_op_eq_blink_c_l17_c6_5cdf_left[1]  (from clk_c +)
+   Destination:    FF         Data in        blink_inst/bin_op_eq_blink_c_l17_c6_5cdf_left[12]  (to clk_c +)
+
+   Delay:               4.489ns  (27.4% logic, 72.6% route), 4 logic levels.
+
+ Constraint Details:
+
+      4.489ns physical path delay blink_inst/SLICE_13 to blink_inst/SLICE_19 meets
+     40.000ns delay constraint less
+      0.000ns skew and
+     -0.260ns DIN_SET requirement (totaling 40.260ns) by 35.771ns
+
+ Physical Path Details:
+
+      Data path blink_inst/SLICE_13 to blink_inst/SLICE_19:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.522    R19C25A.CLK to     R19C25A.Q1 blink_inst/SLICE_13 (from clk_c)
+ROUTE         2     1.019     R19C25A.Q1 to     R18C26D.A1 blink_inst/bin_op_eq_blink_c_l17_c6_5cdf_left[1]
+CTOF_DEL    ---     0.236     R18C26D.A1 to     R18C26D.F1 blink_inst/bin_op_eq_blink_c_l17_c6_5cdf/SLICE_28
+ROUTE         1     0.786     R18C26D.F1 to     R20C26A.A1 blink_inst/bin_op_eq_blink_c_l17_c6_5cdf/return_output_NE_15
+CTOF_DEL    ---     0.236     R20C26A.A1 to     R20C26A.F1 blink_inst/SLICE_26
+ROUTE        26     1.454     R20C26A.F1 to     R20C27C.A0 blink_inst/return_output_NE_22
+CTOF_DEL    ---     0.236     R20C27C.A0 to     R20C27C.F0 blink_inst/SLICE_19
+ROUTE         1     0.000     R20C27C.F0 to    R20C27C.DI0 blink_inst/reg_comb_counter[12] (to clk_c)
+                  --------
+                    4.489   (27.4% logic, 72.6% route), 4 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk to blink_inst/SLICE_13:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        14     2.781       G2.PADDI to    R19C25A.CLK clk_c
+                  --------
+                    2.781   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk to blink_inst/SLICE_19:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        14     2.781       G2.PADDI to    R20C27C.CLK clk_c
+                  --------
+                    2.781   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 35.777ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              blink_inst/bin_op_eq_blink_c_l17_c6_5cdf_left[1]  (from clk_c +)
+   Destination:    FF         Data in        blink_inst/bin_op_eq_blink_c_l17_c6_5cdf_left[15]  (to clk_c +)
+
+   Delay:               4.489ns  (27.4% logic, 72.6% route), 4 logic levels.
+
+ Constraint Details:
+
+      4.489ns physical path delay blink_inst/SLICE_13 to blink_inst/SLICE_20 meets
+     40.000ns delay constraint less
+      0.000ns skew and
+     -0.266ns DIN_SET requirement (totaling 40.266ns) by 35.777ns
+
+ Physical Path Details:
+
+      Data path blink_inst/SLICE_13 to blink_inst/SLICE_20:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.522    R19C25A.CLK to     R19C25A.Q1 blink_inst/SLICE_13 (from clk_c)
+ROUTE         2     1.019     R19C25A.Q1 to     R18C26D.A1 blink_inst/bin_op_eq_blink_c_l17_c6_5cdf_left[1]
+CTOF_DEL    ---     0.236     R18C26D.A1 to     R18C26D.F1 blink_inst/bin_op_eq_blink_c_l17_c6_5cdf/SLICE_28
+ROUTE         1     0.786     R18C26D.F1 to     R20C26A.A1 blink_inst/bin_op_eq_blink_c_l17_c6_5cdf/return_output_NE_15
+CTOF_DEL    ---     0.236     R20C26A.A1 to     R20C26A.F1 blink_inst/SLICE_26
+ROUTE        26     1.454     R20C26A.F1 to     R20C27D.A1 blink_inst/return_output_NE_22
+CTOF_DEL    ---     0.236     R20C27D.A1 to     R20C27D.F1 blink_inst/SLICE_20
+ROUTE         1     0.000     R20C27D.F1 to    R20C27D.DI1 blink_inst/reg_comb_counter[15] (to clk_c)
+                  --------
+                    4.489   (27.4% logic, 72.6% route), 4 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk to blink_inst/SLICE_13:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        14     2.781       G2.PADDI to    R19C25A.CLK clk_c
+                  --------
+                    2.781   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk to blink_inst/SLICE_20:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        14     2.781       G2.PADDI to    R20C27D.CLK clk_c
+                  --------
+                    2.781   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 35.777ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              blink_inst/bin_op_eq_blink_c_l17_c6_5cdf_left[1]  (from clk_c +)
+   Destination:    FF         Data in        blink_inst/bin_op_eq_blink_c_l17_c6_5cdf_left[13]  (to clk_c +)
+
+   Delay:               4.489ns  (27.4% logic, 72.6% route), 4 logic levels.
+
+ Constraint Details:
+
+      4.489ns physical path delay blink_inst/SLICE_13 to blink_inst/SLICE_19 meets
+     40.000ns delay constraint less
+      0.000ns skew and
+     -0.266ns DIN_SET requirement (totaling 40.266ns) by 35.777ns
+
+ Physical Path Details:
+
+      Data path blink_inst/SLICE_13 to blink_inst/SLICE_19:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.522    R19C25A.CLK to     R19C25A.Q1 blink_inst/SLICE_13 (from clk_c)
+ROUTE         2     1.019     R19C25A.Q1 to     R18C26D.A1 blink_inst/bin_op_eq_blink_c_l17_c6_5cdf_left[1]
+CTOF_DEL    ---     0.236     R18C26D.A1 to     R18C26D.F1 blink_inst/bin_op_eq_blink_c_l17_c6_5cdf/SLICE_28
+ROUTE         1     0.786     R18C26D.F1 to     R20C26A.A1 blink_inst/bin_op_eq_blink_c_l17_c6_5cdf/return_output_NE_15
+CTOF_DEL    ---     0.236     R20C26A.A1 to     R20C26A.F1 blink_inst/SLICE_26
+ROUTE        26     1.454     R20C26A.F1 to     R20C27C.A1 blink_inst/return_output_NE_22
+CTOF_DEL    ---     0.236     R20C27C.A1 to     R20C27C.F1 blink_inst/SLICE_19
+ROUTE         1     0.000     R20C27C.F1 to    R20C27C.DI1 blink_inst/reg_comb_counter[13] (to clk_c)
+                  --------
+                    4.489   (27.4% logic, 72.6% route), 4 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk to blink_inst/SLICE_13:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        14     2.781       G2.PADDI to    R19C25A.CLK clk_c
+                  --------
+                    2.781   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk to blink_inst/SLICE_19:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        14     2.781       G2.PADDI to    R20C27C.CLK clk_c
+                  --------
+                    2.781   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 35.779ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              blink_inst/bin_op_eq_blink_c_l17_c6_5cdf_left[3]  (from clk_c +)
+   Destination:    FF         Data in        blink_inst/bin_op_eq_blink_c_l17_c6_5cdf_left[12]  (to clk_c +)
+
+   Delay:               4.481ns  (27.4% logic, 72.6% route), 4 logic levels.
+
+ Constraint Details:
+
+      4.481ns physical path delay blink_inst/SLICE_14 to blink_inst/SLICE_19 meets
+     40.000ns delay constraint less
+      0.000ns skew and
+     -0.260ns DIN_SET requirement (totaling 40.260ns) by 35.779ns
+
+ Physical Path Details:
+
+      Data path blink_inst/SLICE_14 to blink_inst/SLICE_19:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.522    R19C25C.CLK to     R19C25C.Q1 blink_inst/SLICE_14 (from clk_c)
+ROUTE         2     1.011     R19C25C.Q1 to     R18C26D.B1 blink_inst/bin_op_eq_blink_c_l17_c6_5cdf_left[3]
+CTOF_DEL    ---     0.236     R18C26D.B1 to     R18C26D.F1 blink_inst/bin_op_eq_blink_c_l17_c6_5cdf/SLICE_28
+ROUTE         1     0.786     R18C26D.F1 to     R20C26A.A1 blink_inst/bin_op_eq_blink_c_l17_c6_5cdf/return_output_NE_15
+CTOF_DEL    ---     0.236     R20C26A.A1 to     R20C26A.F1 blink_inst/SLICE_26
+ROUTE        26     1.454     R20C26A.F1 to     R20C27C.A0 blink_inst/return_output_NE_22
+CTOF_DEL    ---     0.236     R20C27C.A0 to     R20C27C.F0 blink_inst/SLICE_19
+ROUTE         1     0.000     R20C27C.F0 to    R20C27C.DI0 blink_inst/reg_comb_counter[12] (to clk_c)
+                  --------
+                    4.481   (27.4% logic, 72.6% route), 4 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk to blink_inst/SLICE_14:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        14     2.781       G2.PADDI to    R19C25C.CLK clk_c
+                  --------
+                    2.781   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk to blink_inst/SLICE_19:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        14     2.781       G2.PADDI to    R20C27C.CLK clk_c
+                  --------
+                    2.781   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 35.779ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              blink_inst/bin_op_eq_blink_c_l17_c6_5cdf_left[3]  (from clk_c +)
+   Destination:    FF         Data in        blink_inst/bin_op_eq_blink_c_l17_c6_5cdf_left[14]  (to clk_c +)
+
+   Delay:               4.481ns  (27.4% logic, 72.6% route), 4 logic levels.
+
+ Constraint Details:
+
+      4.481ns physical path delay blink_inst/SLICE_14 to blink_inst/SLICE_20 meets
+     40.000ns delay constraint less
+      0.000ns skew and
+     -0.260ns DIN_SET requirement (totaling 40.260ns) by 35.779ns
+
+ Physical Path Details:
+
+      Data path blink_inst/SLICE_14 to blink_inst/SLICE_20:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.522    R19C25C.CLK to     R19C25C.Q1 blink_inst/SLICE_14 (from clk_c)
+ROUTE         2     1.011     R19C25C.Q1 to     R18C26D.B1 blink_inst/bin_op_eq_blink_c_l17_c6_5cdf_left[3]
+CTOF_DEL    ---     0.236     R18C26D.B1 to     R18C26D.F1 blink_inst/bin_op_eq_blink_c_l17_c6_5cdf/SLICE_28
+ROUTE         1     0.786     R18C26D.F1 to     R20C26A.A1 blink_inst/bin_op_eq_blink_c_l17_c6_5cdf/return_output_NE_15
+CTOF_DEL    ---     0.236     R20C26A.A1 to     R20C26A.F1 blink_inst/SLICE_26
+ROUTE        26     1.454     R20C26A.F1 to     R20C27D.A0 blink_inst/return_output_NE_22
+CTOF_DEL    ---     0.236     R20C27D.A0 to     R20C27D.F0 blink_inst/SLICE_20
+ROUTE         1     0.000     R20C27D.F0 to    R20C27D.DI0 blink_inst/reg_comb_counter[14] (to clk_c)
+                  --------
+                    4.481   (27.4% logic, 72.6% route), 4 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk to blink_inst/SLICE_14:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        14     2.781       G2.PADDI to    R19C25C.CLK clk_c
+                  --------
+                    2.781   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk to blink_inst/SLICE_20:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        14     2.781       G2.PADDI to    R20C27D.CLK clk_c
+                  --------
+                    2.781   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 35.779ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              blink_inst/bin_op_eq_blink_c_l17_c6_5cdf_left[1]  (from clk_c +)
+   Destination:    FF         Data in        blink_inst/bin_op_eq_blink_c_l17_c6_5cdf_left[10]  (to clk_c +)
+
+   Delay:               4.481ns  (27.4% logic, 72.6% route), 4 logic levels.
+
+ Constraint Details:
+
+      4.481ns physical path delay blink_inst/SLICE_13 to blink_inst/SLICE_18 meets
+     40.000ns delay constraint less
+      0.000ns skew and
+     -0.260ns DIN_SET requirement (totaling 40.260ns) by 35.779ns
+
+ Physical Path Details:
+
+      Data path blink_inst/SLICE_13 to blink_inst/SLICE_18:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.522    R19C25A.CLK to     R19C25A.Q1 blink_inst/SLICE_13 (from clk_c)
+ROUTE         2     1.019     R19C25A.Q1 to     R18C26D.A1 blink_inst/bin_op_eq_blink_c_l17_c6_5cdf_left[1]
+CTOF_DEL    ---     0.236     R18C26D.A1 to     R18C26D.F1 blink_inst/bin_op_eq_blink_c_l17_c6_5cdf/SLICE_28
+ROUTE         1     0.786     R18C26D.F1 to     R20C26A.A1 blink_inst/bin_op_eq_blink_c_l17_c6_5cdf/return_output_NE_15
+CTOF_DEL    ---     0.236     R20C26A.A1 to     R20C26A.F1 blink_inst/SLICE_26
+ROUTE        26     1.446     R20C26A.F1 to     R20C27A.B0 blink_inst/return_output_NE_22
+CTOF_DEL    ---     0.236     R20C27A.B0 to     R20C27A.F0 blink_inst/SLICE_18
+ROUTE         1     0.000     R20C27A.F0 to    R20C27A.DI0 blink_inst/reg_comb_counter[10] (to clk_c)
+                  --------
+                    4.481   (27.4% logic, 72.6% route), 4 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk to blink_inst/SLICE_13:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        14     2.781       G2.PADDI to    R19C25A.CLK clk_c
+                  --------
+                    2.781   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk to blink_inst/SLICE_18:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        14     2.781       G2.PADDI to    R20C27A.CLK clk_c
+                  --------
+                    2.781   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 35.785ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              blink_inst/bin_op_eq_blink_c_l17_c6_5cdf_left[3]  (from clk_c +)
+   Destination:    FF         Data in        blink_inst/bin_op_eq_blink_c_l17_c6_5cdf_left[15]  (to clk_c +)
+
+   Delay:               4.481ns  (27.4% logic, 72.6% route), 4 logic levels.
+
+ Constraint Details:
+
+      4.481ns physical path delay blink_inst/SLICE_14 to blink_inst/SLICE_20 meets
+     40.000ns delay constraint less
+      0.000ns skew and
+     -0.266ns DIN_SET requirement (totaling 40.266ns) by 35.785ns
+
+ Physical Path Details:
+
+      Data path blink_inst/SLICE_14 to blink_inst/SLICE_20:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.522    R19C25C.CLK to     R19C25C.Q1 blink_inst/SLICE_14 (from clk_c)
+ROUTE         2     1.011     R19C25C.Q1 to     R18C26D.B1 blink_inst/bin_op_eq_blink_c_l17_c6_5cdf_left[3]
+CTOF_DEL    ---     0.236     R18C26D.B1 to     R18C26D.F1 blink_inst/bin_op_eq_blink_c_l17_c6_5cdf/SLICE_28
+ROUTE         1     0.786     R18C26D.F1 to     R20C26A.A1 blink_inst/bin_op_eq_blink_c_l17_c6_5cdf/return_output_NE_15
+CTOF_DEL    ---     0.236     R20C26A.A1 to     R20C26A.F1 blink_inst/SLICE_26
+ROUTE        26     1.454     R20C26A.F1 to     R20C27D.A1 blink_inst/return_output_NE_22
+CTOF_DEL    ---     0.236     R20C27D.A1 to     R20C27D.F1 blink_inst/SLICE_20
+ROUTE         1     0.000     R20C27D.F1 to    R20C27D.DI1 blink_inst/reg_comb_counter[15] (to clk_c)
+                  --------
+                    4.481   (27.4% logic, 72.6% route), 4 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk to blink_inst/SLICE_14:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        14     2.781       G2.PADDI to    R19C25C.CLK clk_c
+                  --------
+                    2.781   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk to blink_inst/SLICE_20:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        14     2.781       G2.PADDI to    R20C27D.CLK clk_c
+                  --------
+                    2.781   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 35.785ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              blink_inst/bin_op_eq_blink_c_l17_c6_5cdf_left[1]  (from clk_c +)
+   Destination:    FF         Data in        blink_inst/bin_op_eq_blink_c_l17_c6_5cdf_left[11]  (to clk_c +)
+
+   Delay:               4.481ns  (27.4% logic, 72.6% route), 4 logic levels.
+
+ Constraint Details:
+
+      4.481ns physical path delay blink_inst/SLICE_13 to blink_inst/SLICE_18 meets
+     40.000ns delay constraint less
+      0.000ns skew and
+     -0.266ns DIN_SET requirement (totaling 40.266ns) by 35.785ns
+
+ Physical Path Details:
+
+      Data path blink_inst/SLICE_13 to blink_inst/SLICE_18:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.522    R19C25A.CLK to     R19C25A.Q1 blink_inst/SLICE_13 (from clk_c)
+ROUTE         2     1.019     R19C25A.Q1 to     R18C26D.A1 blink_inst/bin_op_eq_blink_c_l17_c6_5cdf_left[1]
+CTOF_DEL    ---     0.236     R18C26D.A1 to     R18C26D.F1 blink_inst/bin_op_eq_blink_c_l17_c6_5cdf/SLICE_28
+ROUTE         1     0.786     R18C26D.F1 to     R20C26A.A1 blink_inst/bin_op_eq_blink_c_l17_c6_5cdf/return_output_NE_15
+CTOF_DEL    ---     0.236     R20C26A.A1 to     R20C26A.F1 blink_inst/SLICE_26
+ROUTE        26     1.446     R20C26A.F1 to     R20C27A.B1 blink_inst/return_output_NE_22
+CTOF_DEL    ---     0.236     R20C27A.B1 to     R20C27A.F1 blink_inst/SLICE_18
+ROUTE         1     0.000     R20C27A.F1 to    R20C27A.DI1 blink_inst/reg_comb_counter[11] (to clk_c)
+                  --------
+                    4.481   (27.4% logic, 72.6% route), 4 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk to blink_inst/SLICE_13:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        14     2.781       G2.PADDI to    R19C25A.CLK clk_c
+                  --------
+                    2.781   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk to blink_inst/SLICE_18:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        14     2.781       G2.PADDI to    R20C27A.CLK clk_c
+                  --------
+                    2.781   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 35.785ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              blink_inst/bin_op_eq_blink_c_l17_c6_5cdf_left[3]  (from clk_c +)
+   Destination:    FF         Data in        blink_inst/bin_op_eq_blink_c_l17_c6_5cdf_left[13]  (to clk_c +)
+
+   Delay:               4.481ns  (27.4% logic, 72.6% route), 4 logic levels.
+
+ Constraint Details:
+
+      4.481ns physical path delay blink_inst/SLICE_14 to blink_inst/SLICE_19 meets
+     40.000ns delay constraint less
+      0.000ns skew and
+     -0.266ns DIN_SET requirement (totaling 40.266ns) by 35.785ns
+
+ Physical Path Details:
+
+      Data path blink_inst/SLICE_14 to blink_inst/SLICE_19:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.522    R19C25C.CLK to     R19C25C.Q1 blink_inst/SLICE_14 (from clk_c)
+ROUTE         2     1.011     R19C25C.Q1 to     R18C26D.B1 blink_inst/bin_op_eq_blink_c_l17_c6_5cdf_left[3]
+CTOF_DEL    ---     0.236     R18C26D.B1 to     R18C26D.F1 blink_inst/bin_op_eq_blink_c_l17_c6_5cdf/SLICE_28
+ROUTE         1     0.786     R18C26D.F1 to     R20C26A.A1 blink_inst/bin_op_eq_blink_c_l17_c6_5cdf/return_output_NE_15
+CTOF_DEL    ---     0.236     R20C26A.A1 to     R20C26A.F1 blink_inst/SLICE_26
+ROUTE        26     1.454     R20C26A.F1 to     R20C27C.A1 blink_inst/return_output_NE_22
+CTOF_DEL    ---     0.236     R20C27C.A1 to     R20C27C.F1 blink_inst/SLICE_19
+ROUTE         1     0.000     R20C27C.F1 to    R20C27C.DI1 blink_inst/reg_comb_counter[13] (to clk_c)
+                  --------
+                    4.481   (27.4% logic, 72.6% route), 4 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk to blink_inst/SLICE_14:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        14     2.781       G2.PADDI to    R19C25C.CLK clk_c
+                  --------
+                    2.781   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk to blink_inst/SLICE_19:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        14     2.781       G2.PADDI to    R20C27C.CLK clk_c
+                  --------
+                    2.781   (0.0% logic, 100.0% route), 0 logic levels.
+
+Report:  200.000MHz is the maximum frequency for this preference.
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference                              |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY PORT "clk" 25.000000 MHz ;    |   25.000 MHz|  200.000 MHz|   0  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+Clock Domains Analysis
+------------------------
+
+Found 1 clocks:
+
+Clock Domain: clk_c   Source: clk.PAD   Loads: 14
+   Covered under: FREQUENCY PORT "clk" 25.000000 MHz ;
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 976 paths, 1 nets, and 211 connections (99.53% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.13.0.56.2
+Sat Sep 14 15:13:48 2024
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 6 -sphld m -o project_project.twr project_project.ncd project_project.prf 
+Design file:     project_project.ncd
+Preference file: project_project.prf
+Device,speed:    LFE5U-85F,m
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Preference: FREQUENCY PORT "clk" 25.000000 MHz ;
+            976 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 0.179ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              blink_inst/bin_op_eq_blink_c_l17_c6_5cdf_left[0]  (from clk_c +)
+   Destination:    FF         Data in        blink_inst/bin_op_eq_blink_c_l17_c6_5cdf_left[0]  (to clk_c +)
+
+   Delay:               0.298ns  (80.5% logic, 19.5% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.298ns physical path delay blink_inst/SLICE_13 to blink_inst/SLICE_13 meets
+      0.119ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.119ns) by 0.179ns
+
+ Physical Path Details:
+
+      Data path blink_inst/SLICE_13 to blink_inst/SLICE_13:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.164    R19C25A.CLK to     R19C25A.Q0 blink_inst/SLICE_13 (from clk_c)
+ROUTE         3     0.058     R19C25A.Q0 to     R19C25A.D0 blink_inst/bin_op_eq_blink_c_l17_c6_5cdf_left[0]
+CTOF_DEL    ---     0.076     R19C25A.D0 to     R19C25A.F0 blink_inst/SLICE_13
+ROUTE         1     0.000     R19C25A.F0 to    R19C25A.DI0 blink_inst/reg_comb_counter[0] (to clk_c)
+                  --------
+                    0.298   (80.5% logic, 19.5% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk to blink_inst/SLICE_13:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        14     0.911       G2.PADDI to    R19C25A.CLK clk_c
+                  --------
+                    0.911   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk to blink_inst/SLICE_13:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        14     0.911       G2.PADDI to    R19C25A.CLK clk_c
+                  --------
+                    0.911   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.257ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              blink_inst/led_mux_blink_c_l17_c3_f797_iffalse  (from clk_c +)
+   Destination:    FF         Data in        blink_inst/led_mux_blink_c_l17_c3_f797_iffalse  (to clk_c +)
+
+   Delay:               0.376ns  (63.8% logic, 36.2% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.376ns physical path delay blink_inst/SLICE_26 to blink_inst/SLICE_26 meets
+      0.119ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.119ns) by 0.257ns
+
+ Physical Path Details:
+
+      Data path blink_inst/SLICE_26 to blink_inst/SLICE_26:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.164    R20C26A.CLK to     R20C26A.Q0 blink_inst/SLICE_26 (from clk_c)
+ROUTE         1     0.134     R20C26A.Q0 to     R20C26A.C0 blink_inst/led_mux_blink_c_l17_c3_f797_iffalse
+CTOF_DEL    ---     0.076     R20C26A.C0 to     R20C26A.F0 blink_inst/SLICE_26
+ROUTE         2     0.002     R20C26A.F0 to    R20C26A.DI0 led_c (to clk_c)
+                  --------
+                    0.376   (63.8% logic, 36.2% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk to blink_inst/SLICE_26:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        14     0.911       G2.PADDI to    R20C26A.CLK clk_c
+                  --------
+                    0.911   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk to blink_inst/SLICE_26:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        14     0.911       G2.PADDI to    R20C26A.CLK clk_c
+                  --------
+                    0.911   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.448ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              blink_inst/bin_op_eq_blink_c_l17_c6_5cdf_left[9]  (from clk_c +)
+   Destination:    FF         Data in        blink_inst/bin_op_eq_blink_c_l17_c6_5cdf_left[24]  (to clk_c +)
+
+   Delay:               0.567ns  (55.6% logic, 44.4% route), 3 logic levels.
+
+ Constraint Details:
+
+      0.567ns physical path delay blink_inst/SLICE_17 to blink_inst/SLICE_25 meets
+      0.119ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.119ns) by 0.448ns
+
+ Physical Path Details:
+
+      Data path blink_inst/SLICE_17 to blink_inst/SLICE_25:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.163    R18C27C.CLK to     R18C27C.Q1 blink_inst/SLICE_17 (from clk_c)
+ROUTE         2     0.123     R18C27C.Q1 to     R18C27B.D1 blink_inst/bin_op_eq_blink_c_l17_c6_5cdf_left[9]
+CTOF_DEL    ---     0.076     R18C27B.D1 to     R18C27B.F1 blink_inst/SLICE_25
+ROUTE        26     0.129     R18C27B.F1 to     R18C27B.D0 blink_inst/return_output_NE_17
+CTOF_DEL    ---     0.076     R18C27B.D0 to     R18C27B.F0 blink_inst/SLICE_25
+ROUTE         1     0.000     R18C27B.F0 to    R18C27B.DI0 blink_inst/reg_comb_counter[24] (to clk_c)
+                  --------
+                    0.567   (55.6% logic, 44.4% route), 3 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk to blink_inst/SLICE_17:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        14     0.911       G2.PADDI to    R18C27C.CLK clk_c
+                  --------
+                    0.911   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk to blink_inst/SLICE_25:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        14     0.911       G2.PADDI to    R18C27B.CLK clk_c
+                  --------
+                    0.911   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.462ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              blink_inst/bin_op_eq_blink_c_l17_c6_5cdf_left[9]  (from clk_c +)
+   Destination:    FF         Data in        blink_inst/bin_op_eq_blink_c_l17_c6_5cdf_left[8]  (to clk_c +)
+
+   Delay:               0.581ns  (54.2% logic, 45.8% route), 3 logic levels.
+
+ Constraint Details:
+
+      0.581ns physical path delay blink_inst/SLICE_17 to blink_inst/SLICE_17 meets
+      0.119ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.119ns) by 0.462ns
+
+ Physical Path Details:
+
+      Data path blink_inst/SLICE_17 to blink_inst/SLICE_17:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.163    R18C27C.CLK to     R18C27C.Q1 blink_inst/SLICE_17 (from clk_c)
+ROUTE         2     0.123     R18C27C.Q1 to     R18C27B.D1 blink_inst/bin_op_eq_blink_c_l17_c6_5cdf_left[9]
+CTOF_DEL    ---     0.076     R18C27B.D1 to     R18C27B.F1 blink_inst/SLICE_25
+ROUTE        26     0.143     R18C27B.F1 to     R18C27C.C0 blink_inst/return_output_NE_17
+CTOF_DEL    ---     0.076     R18C27C.C0 to     R18C27C.F0 blink_inst/SLICE_17
+ROUTE         1     0.000     R18C27C.F0 to    R18C27C.DI0 blink_inst/reg_comb_counter[8] (to clk_c)
+                  --------
+                    0.581   (54.2% logic, 45.8% route), 3 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk to blink_inst/SLICE_17:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        14     0.911       G2.PADDI to    R18C27C.CLK clk_c
+                  --------
+                    0.911   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk to blink_inst/SLICE_17:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        14     0.911       G2.PADDI to    R18C27C.CLK clk_c
+                  --------
+                    0.911   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.467ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              blink_inst/bin_op_eq_blink_c_l17_c6_5cdf_left[9]  (from clk_c +)
+   Destination:    FF         Data in        blink_inst/bin_op_eq_blink_c_l17_c6_5cdf_left[5]  (to clk_c +)
+
+   Delay:               0.586ns  (53.8% logic, 46.2% route), 3 logic levels.
+
+ Constraint Details:
+
+      0.586ns physical path delay blink_inst/SLICE_17 to blink_inst/SLICE_15 meets
+      0.119ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.119ns) by 0.467ns
+
+ Physical Path Details:
+
+      Data path blink_inst/SLICE_17 to blink_inst/SLICE_15:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.163    R18C27C.CLK to     R18C27C.Q1 blink_inst/SLICE_17 (from clk_c)
+ROUTE         2     0.123     R18C27C.Q1 to     R18C27B.D1 blink_inst/bin_op_eq_blink_c_l17_c6_5cdf_left[9]
+CTOF_DEL    ---     0.076     R18C27B.D1 to     R18C27B.F1 blink_inst/SLICE_25
+ROUTE        26     0.148     R18C27B.F1 to     R18C26C.D1 blink_inst/return_output_NE_17
+CTOF_DEL    ---     0.076     R18C26C.D1 to     R18C26C.F1 blink_inst/SLICE_15
+ROUTE         1     0.000     R18C26C.F1 to    R18C26C.DI1 blink_inst/reg_comb_counter[5] (to clk_c)
+                  --------
+                    0.586   (53.8% logic, 46.2% route), 3 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk to blink_inst/SLICE_17:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        14     0.911       G2.PADDI to    R18C27C.CLK clk_c
+                  --------
+                    0.911   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk to blink_inst/SLICE_15:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        14     0.911       G2.PADDI to    R18C26C.CLK clk_c
+                  --------
+                    0.911   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.467ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              blink_inst/bin_op_eq_blink_c_l17_c6_5cdf_left[9]  (from clk_c +)
+   Destination:    FF         Data in        blink_inst/bin_op_eq_blink_c_l17_c6_5cdf_left[4]  (to clk_c +)
+
+   Delay:               0.586ns  (53.8% logic, 46.2% route), 3 logic levels.
+
+ Constraint Details:
+
+      0.586ns physical path delay blink_inst/SLICE_17 to blink_inst/SLICE_15 meets
+      0.119ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.119ns) by 0.467ns
+
+ Physical Path Details:
+
+      Data path blink_inst/SLICE_17 to blink_inst/SLICE_15:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.163    R18C27C.CLK to     R18C27C.Q1 blink_inst/SLICE_17 (from clk_c)
+ROUTE         2     0.123     R18C27C.Q1 to     R18C27B.D1 blink_inst/bin_op_eq_blink_c_l17_c6_5cdf_left[9]
+CTOF_DEL    ---     0.076     R18C27B.D1 to     R18C27B.F1 blink_inst/SLICE_25
+ROUTE        26     0.148     R18C27B.F1 to     R18C26C.D0 blink_inst/return_output_NE_17
+CTOF_DEL    ---     0.076     R18C26C.D0 to     R18C26C.F0 blink_inst/SLICE_15
+ROUTE         1     0.000     R18C26C.F0 to    R18C26C.DI0 blink_inst/reg_comb_counter[4] (to clk_c)
+                  --------
+                    0.586   (53.8% logic, 46.2% route), 3 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk to blink_inst/SLICE_17:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        14     0.911       G2.PADDI to    R18C27C.CLK clk_c
+                  --------
+                    0.911   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk to blink_inst/SLICE_15:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        14     0.911       G2.PADDI to    R18C26C.CLK clk_c
+                  --------
+                    0.911   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.474ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              blink_inst/bin_op_eq_blink_c_l17_c6_5cdf_left[12]  (from clk_c +)
+   Destination:    FF         Data in        blink_inst/bin_op_eq_blink_c_l17_c6_5cdf_left[24]  (to clk_c +)
+
+   Delay:               0.593ns  (53.3% logic, 46.7% route), 3 logic levels.
+
+ Constraint Details:
+
+      0.593ns physical path delay blink_inst/SLICE_19 to blink_inst/SLICE_25 meets
+      0.119ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.119ns) by 0.474ns
+
+ Physical Path Details:
+
+      Data path blink_inst/SLICE_19 to blink_inst/SLICE_25:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.164    R20C27C.CLK to     R20C27C.Q0 blink_inst/SLICE_19 (from clk_c)
+ROUTE         2     0.148     R20C27C.Q0 to     R18C27B.C1 blink_inst/bin_op_eq_blink_c_l17_c6_5cdf_left[12]
+CTOF_DEL    ---     0.076     R18C27B.C1 to     R18C27B.F1 blink_inst/SLICE_25
+ROUTE        26     0.129     R18C27B.F1 to     R18C27B.D0 blink_inst/return_output_NE_17
+CTOF_DEL    ---     0.076     R18C27B.D0 to     R18C27B.F0 blink_inst/SLICE_25
+ROUTE         1     0.000     R18C27B.F0 to    R18C27B.DI0 blink_inst/reg_comb_counter[24] (to clk_c)
+                  --------
+                    0.593   (53.3% logic, 46.7% route), 3 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk to blink_inst/SLICE_19:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        14     0.911       G2.PADDI to    R20C27C.CLK clk_c
+                  --------
+                    0.911   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk to blink_inst/SLICE_25:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        14     0.911       G2.PADDI to    R18C27B.CLK clk_c
+                  --------
+                    0.911   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.488ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              blink_inst/bin_op_eq_blink_c_l17_c6_5cdf_left[12]  (from clk_c +)
+   Destination:    FF         Data in        blink_inst/bin_op_eq_blink_c_l17_c6_5cdf_left[8]  (to clk_c +)
+
+   Delay:               0.607ns  (52.1% logic, 47.9% route), 3 logic levels.
+
+ Constraint Details:
+
+      0.607ns physical path delay blink_inst/SLICE_19 to blink_inst/SLICE_17 meets
+      0.119ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.119ns) by 0.488ns
+
+ Physical Path Details:
+
+      Data path blink_inst/SLICE_19 to blink_inst/SLICE_17:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.164    R20C27C.CLK to     R20C27C.Q0 blink_inst/SLICE_19 (from clk_c)
+ROUTE         2     0.148     R20C27C.Q0 to     R18C27B.C1 blink_inst/bin_op_eq_blink_c_l17_c6_5cdf_left[12]
+CTOF_DEL    ---     0.076     R18C27B.C1 to     R18C27B.F1 blink_inst/SLICE_25
+ROUTE        26     0.143     R18C27B.F1 to     R18C27C.C0 blink_inst/return_output_NE_17
+CTOF_DEL    ---     0.076     R18C27C.C0 to     R18C27C.F0 blink_inst/SLICE_17
+ROUTE         1     0.000     R18C27C.F0 to    R18C27C.DI0 blink_inst/reg_comb_counter[8] (to clk_c)
+                  --------
+                    0.607   (52.1% logic, 47.9% route), 3 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk to blink_inst/SLICE_19:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        14     0.911       G2.PADDI to    R20C27C.CLK clk_c
+                  --------
+                    0.911   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk to blink_inst/SLICE_17:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        14     0.911       G2.PADDI to    R18C27C.CLK clk_c
+                  --------
+                    0.911   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.493ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              blink_inst/bin_op_eq_blink_c_l17_c6_5cdf_left[12]  (from clk_c +)
+   Destination:    FF         Data in        blink_inst/bin_op_eq_blink_c_l17_c6_5cdf_left[5]  (to clk_c +)
+
+   Delay:               0.612ns  (51.6% logic, 48.4% route), 3 logic levels.
+
+ Constraint Details:
+
+      0.612ns physical path delay blink_inst/SLICE_19 to blink_inst/SLICE_15 meets
+      0.119ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.119ns) by 0.493ns
+
+ Physical Path Details:
+
+      Data path blink_inst/SLICE_19 to blink_inst/SLICE_15:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.164    R20C27C.CLK to     R20C27C.Q0 blink_inst/SLICE_19 (from clk_c)
+ROUTE         2     0.148     R20C27C.Q0 to     R18C27B.C1 blink_inst/bin_op_eq_blink_c_l17_c6_5cdf_left[12]
+CTOF_DEL    ---     0.076     R18C27B.C1 to     R18C27B.F1 blink_inst/SLICE_25
+ROUTE        26     0.148     R18C27B.F1 to     R18C26C.D1 blink_inst/return_output_NE_17
+CTOF_DEL    ---     0.076     R18C26C.D1 to     R18C26C.F1 blink_inst/SLICE_15
+ROUTE         1     0.000     R18C26C.F1 to    R18C26C.DI1 blink_inst/reg_comb_counter[5] (to clk_c)
+                  --------
+                    0.612   (51.6% logic, 48.4% route), 3 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk to blink_inst/SLICE_19:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        14     0.911       G2.PADDI to    R20C27C.CLK clk_c
+                  --------
+                    0.911   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk to blink_inst/SLICE_15:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        14     0.911       G2.PADDI to    R18C26C.CLK clk_c
+                  --------
+                    0.911   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.493ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              blink_inst/bin_op_eq_blink_c_l17_c6_5cdf_left[12]  (from clk_c +)
+   Destination:    FF         Data in        blink_inst/bin_op_eq_blink_c_l17_c6_5cdf_left[4]  (to clk_c +)
+
+   Delay:               0.612ns  (51.6% logic, 48.4% route), 3 logic levels.
+
+ Constraint Details:
+
+      0.612ns physical path delay blink_inst/SLICE_19 to blink_inst/SLICE_15 meets
+      0.119ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.119ns) by 0.493ns
+
+ Physical Path Details:
+
+      Data path blink_inst/SLICE_19 to blink_inst/SLICE_15:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.164    R20C27C.CLK to     R20C27C.Q0 blink_inst/SLICE_19 (from clk_c)
+ROUTE         2     0.148     R20C27C.Q0 to     R18C27B.C1 blink_inst/bin_op_eq_blink_c_l17_c6_5cdf_left[12]
+CTOF_DEL    ---     0.076     R18C27B.C1 to     R18C27B.F1 blink_inst/SLICE_25
+ROUTE        26     0.148     R18C27B.F1 to     R18C26C.D0 blink_inst/return_output_NE_17
+CTOF_DEL    ---     0.076     R18C26C.D0 to     R18C26C.F0 blink_inst/SLICE_15
+ROUTE         1     0.000     R18C26C.F0 to    R18C26C.DI0 blink_inst/reg_comb_counter[4] (to clk_c)
+                  --------
+                    0.612   (51.6% logic, 48.4% route), 3 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk to blink_inst/SLICE_19:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        14     0.911       G2.PADDI to    R20C27C.CLK clk_c
+                  --------
+                    0.911   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk to blink_inst/SLICE_15:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        14     0.911       G2.PADDI to    R18C26C.CLK clk_c
+                  --------
+                    0.911   (0.0% logic, 100.0% route), 0 logic levels.
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference(MIN Delays)                  |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY PORT "clk" 25.000000 MHz ;    |            -|            -|   2  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+Clock Domains Analysis
+------------------------
+
+Found 1 clocks:
+
+Clock Domain: clk_c   Source: clk.PAD   Loads: 14
+   Covered under: FREQUENCY PORT "clk" 25.000000 MHz ;
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 976 paths, 1 nets, and 211 connections (99.53% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 0 (setup), 0 (hold)
+Score: 0 (setup), 0 (hold)
+Cumulative negative slack: 0 (0+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+

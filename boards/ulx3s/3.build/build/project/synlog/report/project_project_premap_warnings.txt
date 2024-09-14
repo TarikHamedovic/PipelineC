@@ -1,0 +1,2 @@
+@W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
+@W: MT529 :"/home/user/FPGA/tools/PipelineC/ulx3s/1.hw/top.v":62:2:62:7|Found inferred clock pipelinec_top|clk which controls 26 sequential elements including blink_inst.bin_op_eq_blink_c_l17_c6_5cdf_left[24]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 

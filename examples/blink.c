@@ -2,6 +2,7 @@
 
 // Install+configure synthesis tool then specify part here
 // #pragma PART "xc7a35ticsg324-1l" 
+#pragma PART "CCGM1A1"
 
 // Count to 33333333 iterations * 30ns each ~= 1sec
 uint25_t counter;

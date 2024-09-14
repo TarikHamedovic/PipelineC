@@ -1,0 +1,4 @@
+@W: CG289 :"/home/user/FPGA/tools/PipelineC/ulx3s/1.hw/top.v":26:42:26:91|Specified digits overflow the number's size
+@W: CG289 :"/home/user/FPGA/tools/PipelineC/ulx3s/1.hw/top.v":65:49:65:59|Specified digits overflow the number's size
+@W: CG289 :"/home/user/FPGA/tools/PipelineC/ulx3s/1.hw/top.v":134:51:134:61|Specified digits overflow the number's size
+

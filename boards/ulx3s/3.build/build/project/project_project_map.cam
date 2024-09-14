@@ -1,0 +1,20 @@
+[ START MERGED ]
+[ END MERGED ]
+[ START CLIPPED ]
+blink_inst/bin_op_plus_blink_c_l26_c5_29f1/VCC
+VCC
+blink_inst/bin_op_plus_blink_c_l26_c5_29f1/return_output_cry_0_0_S1
+blink_inst/bin_op_plus_blink_c_l26_c5_29f1/return_output_cry_0_0_S0
+blink_inst/bin_op_plus_blink_c_l26_c5_29f1/N_1
+blink_inst/bin_op_plus_blink_c_l26_c5_29f1/return_output_cry_23_0_COUT
+[ END CLIPPED ]
+[ START DESIGN PREFS ]
+SCHEMATIC START ;
+# map:  version Diamond (64-bit) 3.13.0.56.2 -- WARNING: Map write only section -- Sat Sep 14 15:13:11 2024
+
+SYSCONFIG SLAVE_SPI_PORT=DISABLE MASTER_SPI_PORT=DISABLE SLAVE_PARALLEL_PORT=DISABLE BACKGROUND_RECONFIG=OFF DONE_EX=OFF DONE_OD=ON DONE_PULL=ON MCCLK_FREQ=2.4 TRANSFR=OFF CONFIG_IOVOLTAGE=2.5 CONFIG_SECURE=OFF WAKE_UP=21 COMPRESS_CONFIG=OFF CONFIG_MODE=JTAG INBUF=OFF ;
+LOCATE COMP "led" SITE "H3" ;
+LOCATE COMP "clk" SITE "G2" ;
+FREQUENCY PORT "clk" 25.000000 MHz ;
+SCHEMATIC END ;
+[ END DESIGN PREFS ]

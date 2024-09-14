@@ -1,0 +1,14 @@
+BLOCK RESETPATHS;
+BLOCK ASYNCPATHS;
+
+# The clock "usb" and "gpdi" sheet
+LOCATE COMP "clk" SITE "G2";
+IOBUF PORT "clk" PULLMODE=NONE IO_TYPE=LVCMOS33;
+FREQUENCY PORT "clk" 25.0 MHz;
+
+#======================= 3.3V =========================#
+#---------------------- BANK 6 -----------------------#
+## LED indicator
+LOCATE COMP "led" SITE "H3";
+IOBUF PORT "led" PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4; 
+
